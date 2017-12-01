@@ -1,6 +1,12 @@
 
-
-
+" mapping 
+imap xx <Esc>
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+inoremap { {<S-enter><S-enter>}<Esc>ki<Tab>
+inoremap [ []<Esc>i
+nmap L $
+nmap H 0
 
 
 
@@ -36,14 +42,13 @@ filetype on                 " filetype must be 'on' before setting it 'off'
 filetype off                " force reloading *after* pathogen loaded
 
 " auto add parentheses
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap [ []<Esc>i
-
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+" set the runtime path to include python-mode and initialize
+set rtp+=~/.vim/bundle/python-mode
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -112,10 +117,15 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" ycm
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+"syntastic
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1 
 
 " Local dirs (centralize everything)
 set backupdir=~/.vim/backups
@@ -277,7 +287,8 @@ set list
 set noerrorbells
 set visualbell
 
-
+" copy paste
+set clipboard=unnamedplus
 
 
 " -----------------------------------------------------------------------------
@@ -294,8 +305,8 @@ set smarttab                    " At start of line, <Tab> inserts shift width
                                 "   spaces, <Bs> deletes shift width spaces.
 
 set wrap                        " wrap lines
-set textwidth=80
-"set colorcolumn=+1              " Show large lines
+set textwidth=100
+set colorcolumn=100
 set formatoptions=qrn1          " automatic formating.
 set formatoptions-=o            " don't start new lines w/ comment leader on
                                 "   pressing 'o'
@@ -354,6 +365,10 @@ let g:SuperTabMappingBackward = '<s-c-Space>'
 let g:SuperTabLongestEnhanced = 1
 let g:SuperTabDefaultCompletionType = "<c-p>"
 
+" -- pylint
+let g:syntastic_python_checkers = ['pylint -E']
+let g:syntastic_python_pylint_args = '-E'
+"" to show it accepts a string of args, also:
 
 " --- snipmate ---
 let g:snips_author = 'Miller Medeiros'
@@ -651,11 +666,6 @@ augroup mm_buf_cmds
     " highlight char at column 81 (textwidth + 1)
     autocmd BufEnter * match OverLength /\%81v/
 
-    " Color Column (only on insert)
-    if exists("&colorcolumn")
-        autocmd InsertEnter * set colorcolumn=80
-        autocmd InsertLeave * set colorcolumn=""
-    endif
 augroup END
 
 
