@@ -1,5 +1,6 @@
 
 " mapping 
+"
 imap xx <Esc>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
@@ -84,6 +85,8 @@ Plugin 'mhinz/vim-signify'
 Plugin 'int3/vim-extradite'
 Plugin 'Yggdroot/indentLine'
 
+colorscheme molokai
+
 " css
 Plugin 'ap/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
@@ -106,6 +109,7 @@ Plugin 'millermedeiros/vim-statline'
 " colorschemes
 Plugin 'tomasr/molokai'
 
+
 " YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 
@@ -118,6 +122,7 @@ filetype plugin indent on   " enable detection, plugins and indent
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
 
 " indentLine
 let g:indentLine_color_term = 239 
