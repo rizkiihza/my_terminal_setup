@@ -109,10 +109,6 @@ Plugin 'millermedeiros/vim-statline'
 " colorschemes
 Plugin 'tomasr/molokai'
 
-
-" YouCompleteMe
-Plugin 'Valloric/YouCompleteMe'
-
 " required for vundle
 call vundle#end()
 
