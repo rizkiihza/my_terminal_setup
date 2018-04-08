@@ -13,7 +13,7 @@ nmap J :tabp<CR>
 
 
 set autoread
-
+syntax on
 
 
 
