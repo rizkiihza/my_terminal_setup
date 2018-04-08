@@ -12,7 +12,7 @@ nmap K :tabn<CR>
 nmap J :tabp<CR>
 
 
-
+set autoread
 
 
 
