@@ -8,7 +8,7 @@ inoremap { {<S-enter><S-enter>}<Esc>ki<Tab>
 inoremap [ []<Esc>i
 nmap L $
 nmap H 0
-nmap e @
+nmap w @
 nmap K :tabn<CR>
 nmap J :tabp<CR>
 
