@@ -84,7 +84,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'junkblocker/patchreview-vim'
 Plugin 'ervandew/supertab'
-Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-repeat'
@@ -98,7 +97,7 @@ Plugin 'mhinz/vim-signify'
 Plugin 'int3/vim-extradite'
 Plugin 'Yggdroot/indentLine'
 
-colorscheme molokai
+colorscheme monokai
 
 " css
 Plugin 'ap/vim-css-color'
@@ -135,16 +134,6 @@ set statusline+=%*
 
 " indentLine
 let g:indentLine_color_term = 239 
-
-" ycm
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-
-"syntastic
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1 
 
 " Local dirs (centralize everything)
 set backupdir=~/.vim/backups
