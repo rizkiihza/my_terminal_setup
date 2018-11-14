@@ -8,7 +8,6 @@ inoremap { {<S-enter><S-enter>}<Esc>ki<Tab>
 inoremap [ []<Esc>i
 nmap L $
 nmap H 0
-nmap w @
 nmap K :tabn<CR>
 nmap J :tabp<CR>
 
@@ -97,7 +96,7 @@ Plugin 'mhinz/vim-signify'
 Plugin 'int3/vim-extradite'
 Plugin 'Yggdroot/indentLine'
 
-colorscheme monokai
+colorscheme molokai
 
 " css
 Plugin 'ap/vim-css-color'
@@ -128,7 +127,6 @@ syntax on
 filetype plugin indent on   " enable detection, plugins and indent
 
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 
@@ -348,13 +346,6 @@ let g:NERDCustomDelimiters = {
 \ }
 
 
-" --- Syntastic : Linting / Error check ---
-" close/open location list (errors)
-noremap <silent><leader>lc :lcl<CR>
-noremap <silent><leader>lo :Errors<CR> :lw<CR>
-noremap <silent><leader>ln :lnext<CR>
-noremap <silent><leader>lp :lprev<CR>
-
 
 " --- autocomplete / supertab / jscomplete ---
 set infercase
@@ -372,11 +363,6 @@ let g:SuperTabMappingForward = '<c-space>'
 let g:SuperTabMappingBackward = '<s-c-Space>'
 let g:SuperTabLongestEnhanced = 1
 let g:SuperTabDefaultCompletionType = "<c-p>"
-
-" -- pylint
-let g:syntastic_python_checkers = ['pylint -E']
-let g:syntastic_python_pylint_args = '-E'
-"" to show it accepts a string of args, also:
 
 " --- snipmate ---
 let g:snips_author = 'Miller Medeiros'
