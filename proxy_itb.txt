@@ -1,4 +1,0 @@
-rizkiihza1997
-70637033
-
-export http_proxy="rizkiihza1997:70637033@cache.itb.ac.id:8080"
