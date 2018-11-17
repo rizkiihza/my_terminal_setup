@@ -5,6 +5,9 @@ install molokai : git clone https://github.com/tomasr/molokai.git
 move to ~/.vim/colors
 PluginInstall
 
+in arch or manjaro
+uninstall vim and then install gvim, will enable copy paste
+
 2. tmux
 install tmux 
 copy tmux.conf.txt tp ~/.tmux.conf
