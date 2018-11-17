@@ -1,0 +1,9 @@
+swap left-ctrl with left-alt
+
+# in macOs
+command-j to move left
+command-k to move right
+
+# in manjaro
+ctrl-space yakuake
+alt-space search
