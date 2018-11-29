@@ -4,7 +4,6 @@
 imap xx <Esc>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
-inoremap { {<S-enter><S-enter>}<Esc>ki<Tab>
 inoremap [ []<Esc>i
 nmap L $
 nmap H 0
