@@ -1,9 +1,10 @@
-swap left-ctrl with left-alt
-
 # in macOs
 command-j to move left
 command-k to move right
 
 # in manjaro
+swap left-ctrl with left-alt
 ctrl-space yakuake
 alt-space search
+ctrl-shift-k change windows right in terminal
+ctrl-shift-j change windows left in terminal
