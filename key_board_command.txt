@@ -8,3 +8,4 @@ ctrl-space yakuake
 alt-space search
 ctrl-shift-k change windows right in terminal
 ctrl-shift-j change windows left in terminal
+windows-tab change workspace
