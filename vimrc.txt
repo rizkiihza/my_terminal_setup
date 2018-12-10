@@ -5,6 +5,7 @@ imap xx <Esc>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
 nmap ; :nohl<CR>
+nmap s zf'
 
 set autoread
 syntax on
