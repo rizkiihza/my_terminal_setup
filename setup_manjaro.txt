@@ -1,5 +1,10 @@
 REMEMBER MANJARO KDE
 
+0. Manjaro preprocess
+  -  change pacman mirror to Indonesia
+     sudo pacman-mirrors --interactive
+  - install proprietary driver for Nvidia, search Hardware in settings
+
 1. vim
 copy vimrc.txt to ~/.vimrc
 install vundle : git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
