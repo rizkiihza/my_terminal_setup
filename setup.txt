@@ -1,7 +1,7 @@
 1. vim
 copy vimrc.txt to ~/.vimrc
 install vundle : git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-install molokai : git clone https://github.com/tomasr/molokai.git
+install colorscheme gruvbox : https://github.com/morhetz/gruvbox.git
 move to ~/.vim/colors
 PluginInstall
 
