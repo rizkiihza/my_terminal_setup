@@ -4,11 +4,6 @@
 imap xx <Esc>
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
-inoremap [ []<Esc>i
-nmap L $
-nmap H 0
-nmap K :tabn<CR>
-nmap J :tabp<CR>
 nmap ; :nohl<CR>
 
 set autoread
@@ -114,6 +109,7 @@ Plugin 'millermedeiros/vim-statline'
 
 " Plugin 'jedi-vim'
 Plugin 'davidhalter/jedi-vim'
+let g:jedi#completions_command = "<C-N>"
 
 " colorschemes
 Plugin 'tomasr/molokai'
