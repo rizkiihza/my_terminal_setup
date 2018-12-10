@@ -112,6 +112,9 @@ Plugin 'millermedeiros/vim-esformatter'
 Plugin 'millermedeiros/vim-statline'
 " Plugin 'bling/vim-airline'
 
+" Plugin 'jedi-vim'
+Plugin 'davidhalter/jedi-vim'
+
 " colorschemes
 Plugin 'tomasr/molokai'
 
