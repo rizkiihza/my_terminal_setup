@@ -1,0 +1,32 @@
+REMEMBER MANJARO KDE
+
+1. vim
+copy vimrc.txt to ~/.vimrc
+install vundle : git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+install colorscheme gruvbox : https://github.com/morhetz/gruvbox.git
+move to ~/.vim/colors
+PluginInstall
+
+in arch or manjaro
+uninstall vim and then install gvim, will enable copy paste
+
+
+2. tmux
+install tmux 
+copy tmux.conf.txt tp ~/.tmux.conf
+
+
+3. zshrc
+sudo chsh -s $(which zsh)
+install oh my zsh: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cp zshrc.txt to ~/.zshrc
+
+4. Additional terminal apps
+- tig
+- zathura
+- tlp
+
+5. Install Gui apps
+- Chrome with vimium, addblock, dark reader
+- visual studio code with vim
+

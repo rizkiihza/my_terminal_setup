@@ -5,14 +5,21 @@ install colorscheme gruvbox : https://github.com/morhetz/gruvbox.git
 move to ~/.vim/colors
 PluginInstall
 
-in arch or manjaro
-uninstall vim and then install gvim, will enable copy paste
 
 2. tmux
 install tmux 
 copy tmux.conf.txt tp ~/.tmux.conf
 
+
 3. zshrc
 choose zsh as main shell with chsh
 install oh my zsh: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cp zshrc.txt to ~/.zshrc
+
+4. Additional terminal apps
+- tig
+
+5. Install Gui apps
+- Chrome with vimium, addblock, dark reader
+- visual studio code with vim
+
