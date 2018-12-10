@@ -30,6 +30,11 @@ bind-key R source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
  bind-key j select-pane -D
  bind-key k select-pane -U
  bind-key l select-pane -R
+ bind-key a last-pane
+ bind-key c new-window
+ bind-key q next-window
+ bind-key e previous-window
+
 #
 # # smart pane switching with awareness of vim splits
  bind -n C-h run "(tmux display-message -p '#{pane_current_command}' | grep -iqE '(^|\/)vim$' && tmux send-keys C-h) || tmux select-pane -L"
@@ -46,23 +51,10 @@ bind-key R source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
  set-window-option -g other-pane-height 25
  set-window-option -g other-pane-width 80
 #
- bind-key a last-pane
- bind-key q display-panes
- bind-key c new-window
- bind-key t next-window
- bind-key T previous-window
 #
  bind-key [ copy-mode
  bind-key ] paste-buffer
-#
-# Setup 'v' to begin selection as in Vim
-# bind-key -t vi-copy v begin-selection
-# bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
-#
-# # Update default binding of `Enter` to also use copy-pipe
-# unbind -t vi-copy Enter
-# bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
-#
+
 
 bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi y send-keys -X copy-selection
@@ -91,8 +83,6 @@ bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
  setw -g monitor-activity on
  set -g visual-activity on
 
- # Enable native Mac OS X copy/paste
- set-option -g default-command "/bin/bash -c 'which reattach-to-user-namespace >/dev/null && exec reattach-to-user-namespace $SHELL -l || exec $SHELL -l'"
 #
  # Allow the arrow key to be used immediately after changing windows
  set-option -g repeat-time 0
