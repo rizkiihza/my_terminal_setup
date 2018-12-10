@@ -654,7 +654,7 @@ augroup mm_buf_cmds
     " endif
 
     " highlight char at column 81 (textwidth + 1)
-    autocmd BufEnter * match OverLength /\%81v/
+    " autocmd BufEnter * match OverLength /\%81v/
 
 augroup END
 
