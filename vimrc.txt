@@ -9,6 +9,7 @@ nmap L $
 nmap H 0
 nmap K :tabn<CR>
 nmap J :tabp<CR>
+nmap ; :nohl<CR>
 
 set autoread
 syntax on
@@ -107,11 +108,6 @@ Plugin 'elzr/vim-json'
 Plugin 'mxw/vim-jsx'
 Plugin 'millermedeiros/vim-esformatter'
 " Bundle 'marijnh/tern_for_vim'
-" snipmate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
 
 Plugin 'millermedeiros/vim-statline'
 " Plugin 'bling/vim-airline'
