@@ -10,6 +10,7 @@ REMEMBER MANJARO KDE
     sudo mhwd -i pci video-hybrid-intel-nvidia-bumblebee
     
     for more info read : https://forum.manjaro.org/t/hybrid-graphics-nvidia/20166/2
+    add user to bumblebee :sudo gpasswd -a <user> bumblebee
 1. vim
 copy vimrc.txt to ~/.vimrc
 install vundle : git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
