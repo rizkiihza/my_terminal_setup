@@ -5,6 +5,9 @@ REMEMBER MANJARO KDE
      sudo pacman-mirrors --interactive
   - install proprietary driver for Nvidia, search Hardware in settings
 
+    sudo mhwd -r pci video-hybrid-intel-nvidia-bumblebee
+    sudo mhwd -r pci video-linux
+    sudo mhwd -i pci video-hybrid-intel-nvidia-bumblebee
 1. vim
 copy vimrc.txt to ~/.vimrc
 install vundle : git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
