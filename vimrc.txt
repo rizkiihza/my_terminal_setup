@@ -1,4 +1,5 @@
 
+
 " mapping 
 "
 nmap <S-enter> O<Esc>
@@ -17,6 +18,8 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+
+set clipboard=unnamedplus
 
 " Auto indent pasted text
  nnoremap p p=`]<C-o>
@@ -92,8 +95,8 @@ Plugin 'mhinz/vim-signify'
 Plugin 'int3/vim-extradite'
 Plugin 'Yggdroot/indentLine'
 
+set background=dark
 colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
 
 " css
 Plugin 'ap/vim-css-color'
