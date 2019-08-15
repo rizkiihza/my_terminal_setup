@@ -5,6 +5,7 @@ git clone https://github.com/morhetz/gruvbox.git ~/.vim/gruvbox
 mkdir ~/.vim/colors
 mv ~/.vim/gruvbox/colors/gruvbox.vim ~/.vim/colors/gruvbox.vim
 cp vimrc.txt ~/.vimrc
+vim +'PlugInstall --sync' +qa
 
 sudo chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
