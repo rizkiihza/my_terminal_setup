@@ -1,6 +1,5 @@
 nmap <S-enter> O<Esc>
 nmap <CR> o<Esc>
-imap xx <Esc>
 nmap ; :nohl<CR>
 nmap s zf'
 
