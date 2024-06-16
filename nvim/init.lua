@@ -15,5 +15,8 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- cursor 
+vim.opt.guicursor = "n-v-i-c:block-Cursor"
+
 require "lazy_setup"
 require "polish"
