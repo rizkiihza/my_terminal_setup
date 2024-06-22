@@ -18,5 +18,8 @@ end
 -- cursor 
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
+-- clipboard
+vim.api.nvim_set_option("clipboard", "unnamed")
+
 require "lazy_setup"
 require "polish"

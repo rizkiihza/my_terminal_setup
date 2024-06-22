@@ -73,12 +73,27 @@ return {
         gR = {
           function() vim.lsp.buf.references() end,
           desc = "References of current symbol",
-          cond = "textDocument/references"
+          cond = "textDocument/references",
+        },
+        gN = {
+          function() vim.lsp.buf.rename() end,
+          desc = "Rename of current symbol",
+          cond = "textDocument/rename",
+        },
+        gH = {
+          function() vim.lsp.buf.hover() end,
+          desc = "Hover of current symbol",
+          cond = "textDocument/hover",
         },
         gD = {
           function() vim.lsp.buf.declaration() end,
           desc = "Declaration of current symbol",
           cond = "textDocument/declaration",
+        },
+        gI = {
+          function() vim.lsp.buf.implementation() end,
+          desc = "Implementation of current symbol",
+          cond = "textDocument/implementation",
         },
         ["<Leader>uY"] = {
           function() require("astrolsp.toggles").buffer_semantic_tokens() end,
