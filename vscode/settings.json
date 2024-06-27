@@ -1,4 +1,6 @@
 {
     "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.leader": ",",
     "workbench.colorTheme": "Gruvbox Dark Soft"
 }
