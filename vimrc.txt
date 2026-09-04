@@ -220,6 +220,12 @@ nnoremap <leader>q :close<CR>
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
+" Resize splits by direction (handy for widening NERDTree, etc.)
+nnoremap <silent> <Leader><Left>  :vertical resize -5<CR>
+nnoremap <silent> <Leader><Right> :vertical resize +5<CR>
+nnoremap <silent> <Leader><Up>    :resize +5<CR>
+nnoremap <silent> <Leader><Down>  :resize -5<CR>
+
 " Quick buffer navigation
 nnoremap <silent> <leader>bn :bnext<CR>
 nnoremap <silent> <leader>bp :bprevious<CR>
