@@ -1,0 +1,10 @@
+# Agent and AI assistant files
+.agents/
+.gemini/
+GEMINI.md
+.antigravity/
+.agy/
+.claude/
+CLAUDE.md
+.cursor/
+.cursorrules
